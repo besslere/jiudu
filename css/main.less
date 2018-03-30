@@ -1,0 +1,1394 @@
+/*
+ * Website CSS
+ * @Author:ZouYuan
+ * @Date:2017-09-15
+ */
+
+/*Common Style*/
+::-moz-placeholder {
+  color: #aaa;
+}
+::-webkit-input-placeholder {
+  color: #aaa;
+}
+:-ms-input-placeholder {
+  color: #aaa;
+}
+html {
+  color: #333;
+}
+html,body {
+  margin: 0;
+  height: 100%;
+  font-family: core, "Avenir Next", "Helvetica Neue", Helvetica, Arial, "Source Han Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi MicroHei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #666;
+}
+a:active,a:hover {
+  outline: 0;
+}
+img {
+  border: 0;
+}
+html, body, div, dl, dt, dd, ol, ul, li, h1, h2, h3, h4, h5, h6, p, blockquote, pre, button, fieldset, form, input, legend, textarea, th, td {
+  margin: 0;
+  padding: 0;
+}
+button,input,select,textarea {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+i {
+  font-style: normal;
+}
+
+/*Main Style*/
+
+.jiudu_header{
+  height: 75px;
+  background: #fff;
+  box-shadow: 0 0 3px #939da6;
+  margin-bottom: 0;
+  z-index: 200;
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  .navbar-header{
+    .navbar-toggle{
+      margin-top: 18px;
+      .icon-bar{
+        background: #007bc8;
+      }
+    }
+    .navbar-brand{
+      background: url("../img/jiudu_logo.png") no-repeat;
+      width: 150px;
+      height: 75px;
+    }
+    .link{
+      float: left;
+      height: 40px;
+      line-height: 50px;
+      margin: 16px 0 0 20px;
+      display: inline;
+      padding-left: 15px;
+      border-left: 2px solid #f5a623;
+      a{
+        font-size: 20px;
+        font-weight: normal;
+        text-decoration: none;
+        &:hover{
+          color: #666;
+        }
+      }
+    }
+  }
+  .navbar-collapse{
+    .navbar-nav{
+      background: #fff;
+    }
+    li{
+      font-size: 14px;
+      letter-spacing: 1px;
+      a{
+        display: block;
+        width: 100%;
+        height: 74px;
+        line-height: 52px;
+        padding: 9px 5px;
+        &:hover{
+          color: #007bc8;
+          background: none;
+        }
+      }
+      a.jiudu_login{
+        padding: 3px 16px;
+        width: 92px;
+        height: 30px;
+        line-height: 25px;
+        border-radius: 3px;
+        background: #007bc8;
+        color: #fff;
+        margin: 19px 0;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.frBox{
+  margin-top: 75px;
+  .container{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .col-xs-6{
+    text-align: center;
+    height: 100px;
+    color: #fff;
+    padding: 35px 0;
+    border: 1px solid #fff;
+    a{
+      font-size: 20px;
+      color: #fff;
+      text-decoration: none;
+      padding-left: 95px;
+      span{
+        font-size: 16px;
+      }
+    }
+  }
+  .kd1{
+    background: url("../img/kd1.png") no-repeat center center/cover;
+  }
+  .kd2{
+    background: url("../img/kd2.png") no-repeat center center/cover;
+    a{
+      padding-left: 0;
+      padding-right: 95px;
+    }
+  }
+  .kd3{
+    background: url("../img/kd3.png") no-repeat center center/cover;
+  }
+  .kd4{
+    background: url("../img/kd4.png") no-repeat center center/cover;
+    a{
+      padding-left: 0;
+      padding-right: 95px;
+    }
+  }
+}
+
+#jiudu_ad > .carousel-inner > .item {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  > img {
+    width: 100%;
+  }
+}
+
+#jiudu_ad > .carousel-inner > .item > img {
+  width: 100%;
+  margin-top: 76px;
+}
+
+.jiudu_box{
+  overflow: hidden;
+  text-align: center;
+  font-size: 16px;
+  padding: 30px 0 0;
+  background: #eee;
+  .col-md-4{
+
+  }
+  .box{
+    background: #fff;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    padding: 14px 22px 14px 50px;
+    p{
+      width: 64px;
+      height: 64px;
+      margin: 0 auto;
+    }
+    span{
+      display: block;
+      font-size: 12px;
+      padding: 10px 0;
+      line-height: 25px;
+      text-align: left;
+    }
+    a{
+      text-decoration: none;
+      display: block;
+      padding: 10px 0 0 -1px;
+      color: #000;
+
+    }
+  }
+}
+
+.jiudu_qd{
+  margin: 40px 0 90px;
+  .col-md-12{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .col-md-3{
+    padding-left: 0;
+    padding-right: 0;
+    .qd{
+      height: 118px;
+      position:relative;
+      .bd{
+        width: 250px;
+        height: 120px;
+        margin: 0 auto;
+        border-radius: 8px;
+        opacity: .68;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -125px;
+        margin-top: -60px;
+      }
+      .bd1{
+        background: url(../img/qd1.jpg) no-repeat top center;
+      }
+      .bd2{
+        background: url(../img/qd2.jpg) no-repeat top center;
+      }
+      .bd3{
+        background: url(../img/qd3.jpg) no-repeat top center;
+      }
+      .bd4{
+        background: url(../img/qd4.jpg) no-repeat top center;
+      }
+      .bdCtn{
+        color: #fff;
+        z-index: 100;
+        position: absolute;
+        padding: 25px 0 0 92px;
+        h2{
+          margin-bottom: 18px;
+          color: #333;
+          font-size: 25px;
+        }
+        a{
+          display: block;
+          color: #fff;
+          text-decoration: none;
+          text-align: center;
+          padding: 3px 0;
+          width: 80px;
+          margin: 0 auto;
+          background: #f18200;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+}
+
+.jiudu_lgPage{
+  background: #ccc;
+  .form-horizontal{
+    padding: 10px 10px 30px;
+    margin: 30px 0;
+    background: #fff;
+    border-radius: 5px;
+    input,button{
+      border-radius: 0;
+      outline-style: none;
+      height: 40px;
+      margin-bottom: 10px;
+    }
+    button{
+      background: #007bc8;
+      color: #fff;
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+    input[type="checkbox"]{
+      height: 12px;
+      position: relative;
+    }
+    span{
+      a{
+        text-decoration: none;
+        padding-right: 10px;
+        font-size: 12px;
+      }
+      a:last-child{
+        padding-right: 0;
+      }
+    }
+    h3{
+      color: #666;
+      padding: 30px 0;
+      text-align: center;
+    }
+    .col-md-7{
+      position: relative;
+      img{
+        position: absolute;
+        top: 0;
+        right: -72px;
+      }
+    }
+    .form-group{
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.jiudu_new{
+  margin: 52px 0 52px;
+  .col-md-7{
+    border: 1px solid #f18200;
+    border-right: none;
+    overflow: auto;
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: none;
+    border-top: none;
+    .col-md-1{
+      background: #007bc8;
+      color: #fff;
+      p{
+        padding: 72px 0 72px 4px;
+      }
+    }
+    .col-md-11{
+      padding-left: 0;
+      padding-right: 0;
+      a{
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+    .col-md-4{
+      text-align: center;
+      padding: 7px 0;
+      border-right: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      background: #56969a;
+      color: #fff;
+    }
+  }
+  .col-md-5{
+    padding-right: 0;
+    .newBox{
+      overflow: hidden;
+      max-height: 224px;
+      .col-md-12{
+        border: 1px solid #aaa;
+        .mainNew{
+          border-bottom: 1px dashed #aaa;
+          padding-bottom: 5px;
+          padding-top: 13px;
+          .mainTop{
+            overflow: hidden;
+            h5{
+              color: #000;
+              font-weight: bold;
+              font-size: 14px;
+              width: 320px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+            p{
+              b{
+                color: #000;
+                font-size: 16px;
+              }
+              a{
+                text-decoration: none;
+              }
+            }
+          }
+        }
+        .mainBtm{
+          overflow: hidden;
+          padding: 10px 0;
+          border-bottom: 1px dashed #aaa;
+          h5{
+            width: 320px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+        .mainBtm:last-child{
+          border-bottom: none;
+        }
+        p{
+          color: #a5a5a5;
+          border-bottom: 2px dashed #aaa;
+          margin: 0 0 31px 0;
+          padding: 2px 0 26px;
+        }
+      }
+    }
+  }
+}
+
+.modal{
+  .md{
+    padding: 10px 0;
+  }
+  .modal-body{
+    overflow: hidden;
+  }
+}
+
+.newsPic,.aboutsPic{
+  height: 200px;
+}
+
+.newsPic{
+  background: url("../img/titPic.png") no-repeat;
+}
+
+.abouts{
+  background: url("../img/abouts.png") no-repeat;
+}
+
+.news_ctn{
+  .col-md-2 {
+    margin-top: 30px;
+    h2{
+      font-size: 20px;
+      text-align: center;
+      padding: 20px 0;
+      background: #999;
+      margin-bottom: 0;
+      color: #fff;
+    }
+  }
+  .newsTop{
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+    padding: 10px 0;
+    h5{
+      font-size: 20px;
+      color: #596D82;
+      span{
+        font-size: 16px;
+        padding-left: 10px;
+        color: #ACB2C6;
+      }
+    }
+    > span{
+      color: #ACB2C6;
+      a{
+        color: #ACB2C6;
+        text-decoration: none;
+      }
+    }
+  }
+  .newsInfo{
+    padding: 15px 20px;
+    h3{
+      text-align: center;
+      padding: 20px 0 30px;
+      color: #000;
+    }
+    .newsCtn{
+      p{
+        line-height: 40px;
+      }
+    }
+  }
+  .news_title {
+    width: 100%;
+    height: auto;
+    margin: 20px 0 10px;
+    text-align: center;
+    h2{
+      font-size: 24px;
+      line-height: 40px;
+      font-weight: 500;
+      margin: 0;
+    }
+    h3{
+      margin-top: 50px;
+    }
+    p{
+      color: #b3b3b3;
+      width: 100%;
+      padding: 5px 0;
+      font-size: 14px;
+      border-bottom: 1px dashed #c1c1c1;
+    }
+  }
+  .content{
+    width: 100%;
+    padding: 30px 0;
+    font-size: 16px;
+    line-height: 40px;
+    p{
+      text-indent: 32px;
+    }
+  }
+  .newsDet{
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+    border-bottom: 1px solid #e4e4e4;
+    padding-bottom: 20px;
+    overflow: hidden;
+    .newsDate{
+      background: #b7b7b7;
+      border-radius: 2px;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      b{
+        cursor: pointer;
+        font-size: 50px;
+        margin-top: 15px;
+        display: block;
+        width: 100%;
+        line-height: 40px;
+        padding-bottom: 8px;
+      }
+      em{
+        font-style: normal;
+      }
+    }
+    .col-md-10{
+      a{
+        font-size: 18px;
+        text-decoration: none;
+        color: #333;
+        display: block;
+        width: 100%;
+        margin: 17px 0 15px;
+      }
+      p{
+        line-height: 28px;
+        color: #999;
+        font-size: 14px;
+        height: 60px;
+        display: block;
+        width: 100%;
+        overflow: hidden;
+      }
+    }
+    &:hover{
+      .newsDate{
+        background: #007bc8;
+      }
+      .col-md-10{
+        a{
+          color: #007bc8;
+        }
+      }
+    }
+  }
+  .tab-content{
+    padding: 22px 0;
+    .newsList{
+      overflow: hidden;
+      line-height: 42px;
+      padding: 2px 0 2px 20px;
+      margin: 5px 0;
+      p{
+        overflow: hidden;
+        a{
+          text-decoration: none;
+        }
+        span{
+          color: #a1a1a1;
+        }
+      }
+    }
+  }
+
+  .page {
+    font-size: 1.125em;
+    margin: 30px 0 50px 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    a{
+      text-decoration: none;
+      border: 1px solid #e1e1e1;
+      color: #777;
+      background: #f5f5f5;
+      padding: 7px 13px;
+      display: inline;
+      margin: 0 8px;
+      border-radius: 2px;
+      &.active{
+        border: 1px solid #e95b5e;
+        color: #fff;
+        background: #e95b5e;
+      }
+    }
+  }
+  .col-md-10 {
+    margin-top: 21px;
+  }
+  .nav{
+    li {
+      text-align: center;
+      width: 100%;
+      a{
+        font-size: 14px;
+        color: #666;
+        border-radius: 0;
+        margin-right: 0;
+        border: 1px solid #ececec;
+        letter-spacing: 2px;
+      }
+    }
+    li.active a {
+      border-bottom: 1px solid #ddd;
+      background: #007bc8;
+      color: #fff;
+    }
+  }
+}
+
+.channelPrice{
+  .page{
+    text-align: center;
+  }
+  .form-group{
+    margin-bottom: 0;
+  }
+  input,.input-group-addon,button{
+    border-radius: 0;
+  }
+  .input-group-addon{
+    background: #ececec;
+    color: #666;
+  }
+  .col-xs-12{
+    .col-xs-6,.col-xs-4,.col-xs-12{
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .shCtn{
+    overflow: hidden;
+    margin: 50px 0 70px;
+    .atd{
+      color: #f00;
+    }
+  }
+  .order {
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    .line {
+      display: inline-block;
+      width: 250px;
+      border-top: 1px solid #ccc;
+    }
+    .txt {
+      color: #686868;
+      vertical-align: middle;
+      font-size: 20px;
+    }
+  }
+  .form-inline{
+    overflow: hidden;
+    .form-group{
+      padding: 20px 0 5px;
+      p{
+        padding: 10px 0;
+        span{
+          color: #f00;
+        }
+      }
+      a{
+        background: #f18200;
+        border: none;
+      }
+    }
+    .chn{
+      display: inline;
+    }
+  }
+  span.atd{
+    padding: 10px 0;
+  }
+  table{
+    thead{
+      tr{
+        background: #0059BD;
+        color: #fff;
+        th{
+          text-align: center;
+          border: 1px solid #fff;
+        }
+        th:first-child{
+          line-height: 40px;
+        }
+        th:last-child{
+          line-height: 40px;
+        }
+      }
+    }
+    tbody{
+      border: 1px solid #F0F0F0;
+      color: #5F5F5F;
+      tr{
+        th,td{
+          text-align: center;
+          border-right: 1px solid #F0F0F0;
+        }
+      }
+      tr{
+        td:last-child{
+          a{
+            color: #f18200;
+            text-decoration: none;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .jgcx{
+    border-bottom: 1px solid #ddd;
+    padding: 40px 0;
+    margin-top: 100px;
+    .jgcx1{
+      h3{
+        color: #605F60;
+        span{
+          color: #9D9A97;
+          font-size: 14px;
+        }
+      }
+    }
+    a{
+      text-decoration: none;
+    }
+  }
+  .jgcxZs{
+    border: 1px solid #f18200;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 60px 0;
+    p{
+      line-height: 20px;
+    }
+  }
+}
+
+.channelProduct{
+  .jgcx{
+    margin: 80px 0 10px;
+  }
+  .jgcxZs{
+    margin: 30px 0;
+  }
+  .shCtn{
+    margin-bottom: 60px !important;
+  }
+  .col-md-12{
+    margin: 20px 0;
+    .col-md-12{
+      border: 1px solid #ccc;
+      margin-top: 20px;
+      padding-bottom: 15px;
+    }
+  }
+  .form-inline{
+    padding: 25px 0 10px;
+    .form-group {
+      padding: 0;
+      margin-right: 40px;
+      label{
+        span{
+          color: #f00;
+        }
+      }
+    }
+    > a{
+      background: #f18200;
+      border: none;
+    }
+  }
+  .table{
+    thead{
+      .jz{
+        line-height: 40px;
+      }
+    }
+  }
+}
+
+.expOrder{
+  img{
+    margin-top: 75px;
+  }
+  .form-inline:last-child{
+    text-align: center;
+  }
+  .col-md-7{
+    padding-left: 0;
+    .fi1{
+      padding-left: 0;
+    }
+    .fi2{
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .fi3{
+      padding-right: 0;
+    }
+  }
+  .col-md-5{
+    p{
+      border: 1px solid #f18200;
+      padding: 10px;
+      line-height: 30px;
+      border-radius: 5px;
+      margin: 80px 0;
+    }
+  }
+}
+
+.hdInfo{
+  padding: 5px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  width: 364px;
+  margin: 0 auto;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.hdCtn{
+  border: 1px dashed #aaa;
+  padding: 40px;
+  p{
+    line-height: 30px;
+  }
+}
+
+.logTrack{
+  margin-top: 136px;
+  .col-md-4{
+    border: 1px solid #ddd;
+    padding: 5px;
+    .media-heading{
+      line-height: 35px;
+      span{
+        color: #007bc8;
+      }
+    }
+    span{
+      em{
+        font-style: normal;
+      }
+    }
+  }
+  .col-md-6{
+    border: 1px solid #ddd;
+    min-height: 76px;
+    p{
+      padding: 15px 0;
+      color: #f18200;
+    }
+    b{
+      font-weight: normal;
+      color: #007bc8;
+      cursor: pointer;
+      padding: 3px 10px 0 0;
+    }
+  }
+  .col-md-12:first-child{
+    margin: 2px 0 40px;
+    input,button{
+      border-radius: 0;
+    }
+    input,button{
+      height: 50px;
+    }
+    button{
+      background: #007bc8;
+      color: #fff;
+    }
+  }
+  .col-md-12:last-child{
+    margin: 30px 0 70px;
+    thead{
+      background: #0059BD;
+      color: #fff;
+    }
+    tbody{
+      color: #aaa;
+      tr:first-child{
+        color: #f18200;
+      }
+    }
+    .atd{
+      color: #f00;
+    }
+  }
+}
+
+.login{
+  min-height: 100%;
+  position: relative;
+  background: #f4f4f4;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 40px;
+  .loginTop{
+    overflow: hidden;
+    padding-bottom: 10px;
+    .ret{
+      line-height: 71px;
+      span{
+        a{
+          text-decoration: none;
+          color: #f18200;
+        }
+        i{
+          font-style: normal;
+        }
+      }
+      > b{
+        font-weight: normal;
+        padding: 0 20px;
+      }
+      > a{
+        color: #017cc8;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .cetop{
+    background: #bbb;
+    color: #fff;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    h2{
+      height: 76px;
+      line-height: 76px;
+      font-size: 24px;
+      font-weight: normal;
+    }
+  }
+  .cetCtn{
+    overflow: hidden;
+    padding: 50px 0;
+    background: #fff;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    input{
+      background: #f4f4f4;;
+    }
+    input:focus{
+      background: #fff;
+    }
+    .col-md-12{
+      padding-bottom: 10px;
+      > a{
+        text-decoration: none;
+        background: #eee;
+      }
+      span{
+        a{
+          text-decoration: none;
+          padding-left: 10px;
+        }
+      }
+    }
+    .col-md-8{
+      img{
+        position: absolute;
+        right: -86px;
+        top: 0;
+      }
+    }
+  }
+  .loginBtm{
+    text-align: center;
+    padding: 20px 0;
+    a{
+      text-decoration: none;
+    }
+  }
+}
+
+.href{
+  background: #eee;
+  color: #333;
+  padding: 16px;
+  text-align: center;
+  b{
+    font-size: 16px;
+  }
+  a{
+    text-decoration: none;
+    padding: 0 10px;
+  }
+}
+
+.footer{
+  background: #333;
+  height: 40px;
+  line-height: 40px;
+  color: #666;
+  text-align: center;
+  font-size: 12px;
+  .btmNav{
+    span,p{
+      color: #fff;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 767px){
+  .jiudu_header{
+    .navbar-nav{
+      margin: 0 -15px;
+    }
+    .navbar-collapse {
+      border-bottom: 1px solid #aaa;
+      li{
+        a{
+          height: 40px;
+          line-height: 25px;
+          padding-right: 8px;
+          padding-left: 12px;
+          &:hover{
+            background: none;
+          }
+        }
+        a.jiudu_login{
+          width: 92px;
+          margin: 8px 12px;
+        }
+      }
+    }
+  }
+  .jiudu_qd{
+    .col-md-12{
+      padding-left: 0;
+      padding-right: 0;
+      .col-md-3{
+        padding-left: 0;
+        padding-right: 0;
+        .qd{
+          .bd{
+            width: 160px;
+            height: 100px;
+            margin: 0 auto;
+            border-radius: 8px;
+            opacity: .68;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -80px;
+            margin-top: -50px;
+          }
+          .bdCtn{
+            padding: 25px 0 0 46px;
+            h2{
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .jiudu_lgPage{
+    .col-md-7{
+      .yzInput{
+        width: 150px;
+      }
+      img{
+        position: absolute;
+        top: 0;
+        right: 16px !important;
+      }
+    }
+  }
+  .newsList{
+    padding-left: 0 !important;
+    p{
+      a{
+        width: 230px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+  .jiudu_new{
+    margin: 20px 0 0;
+    .col-md-12{
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .col-md-7{
+      margin: 30px 0;
+      .col-md-1{
+        p{
+          text-align: center;
+          padding: 5px;
+        }
+      }
+      .col-xs-4{
+        font-size: 12px;
+      }
+    }
+    .col-md-5{
+      padding-left: 0;
+      padding-right: 0;
+      .newBox{
+        max-height: inherit;
+        .col-md-12{
+          padding: 16px;
+        }
+        h5{
+          width: 220px !important;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+  .news_ctn{
+    margin: 70px 0 40px;
+    .page a{
+      padding: 7px 10px;
+      margin: 0 2px;
+      font-size: 12px;
+    }
+    .col-md-2{
+      .nav{
+        li{
+          width: 33.33%;
+          float: left;
+        }
+      }
+    }
+    .col-md-10{
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .col-md-12{
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .newsTop{
+      h5{
+        span{
+          display: none;
+        }
+      }
+    }
+    .newsInfo{
+      padding: 0;
+    }
+  }
+  .channelPrice{
+    .shCtn{
+      margin: 30px 0 70px;
+    }
+    .col-md-12{
+      padding: 0;
+      .jgcx{
+        padding: 35px 0;
+        .jgcx1{
+          h3{
+            font-size: 18px;
+          }
+        }
+      }
+      .col-md-7{
+        padding-top: 10px;
+        padding-bottom:10px;
+      }
+      .col-md-5{
+        .jgcxZs{
+          margin: 30px 0;
+        }
+      }
+    }
+    .order .line{
+      width: 40px;
+    }
+    .form-inline {
+      .form-group{
+        padding: 10px 0 5px;
+      }
+      .fg{
+        padding: 0;
+        .zbk{
+          border-left: none;
+        }
+      }
+      .fg1{
+        float: left;
+        max-width: 120px;
+      }
+      .fg2{
+        float: left;
+        max-width: 115px;
+      }
+    }
+    .form-inline{
+      button{
+        margin: 0;
+      }
+    }
+  }
+  .channelProduct{
+    .col-md-12{
+      .col-md-12{
+        border: none;
+      }
+    }
+    .form-inline{
+      padding: 0;
+      .form-group{
+        margin-right: 0;
+      }
+      > a{
+        margin-top: 20px;
+      }
+    }
+  }
+  .expOrder{
+    .jgcx{
+      margin-top: 0;
+    }
+    .col-md-7{
+      padding-right: 0;
+    }
+    .col-md-5{
+      p{
+        margin: 20px 0;
+      }
+    }
+  }
+  .hdInfo{
+    padding: 5px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    width: 330px;
+    margin: 0 auto;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .hdCtn{
+    padding: 16px;
+    p{
+      line-height: 30px;
+    }
+  }
+  .modal-dialog{
+    margin: 76px 10px 10px 10px;
+  }
+  .checkbox{
+    margin-top: 0;
+  }
+  .logTrack {
+    margin-top: 80px;
+    .container{
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .col-md-4{
+      border-bottom: none;
+    }
+    .col-md-6{
+      p{
+        padding: 7px 0;
+      }
+    }
+    .col-md-12:first-child{
+      margin: 40px 0 20px;
+    }
+    .col-md-12:last-child{
+      margin-bottom: 100px;
+    }
+  }
+  .login{
+    padding-top: 0;
+    .col-md-10{
+      padding-left: 0;
+      padding-right: 0;
+      .ret{
+        i{
+          display: none;
+        }
+        > b{
+          padding: 0 5px !important;
+        }
+      }
+    }
+    .col-md-8{
+      .yzInput{
+        width: 200px;
+      }
+      img{
+        right: 16px !important;
+      }
+    }
+  }
+  .href{
+    margin-bottom: 0;
+    .container,.col-md-12{
+      padding-left: 0;
+      padding-right: 0;
+    }
+    b{
+      padding-right: 19px;
+    }
+    a{
+      padding: 0 6px;
+    }
+  }
+  .footer{
+    position: relative;
+    .btmNav{
+      p{
+        float: none !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #jiudu_ad > .carousel-inner > .item {
+    height: 400px;
+  }
+  .modal-dialog{
+    margin: 200px auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  .jiudu_header .navbar-collapse li{
+    padding: 0;
+  }
+  .login{
+    .col-md-8{
+      .yzInput{
+        width: 500px;
+      }
+      img{
+        right: 16px !important;
+      }
+    }
+  }
+  .frBox{
+    display: none;
+  }
+}
+
+
